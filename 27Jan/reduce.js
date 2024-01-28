@@ -3,11 +3,14 @@
 
 /* array: The array to iterate over.
 callback: Function to execute on each element in the array, taking four arguments:
-accumulator: The accumulator accumulates the callback's return values. It is the accumulated result of the previous iterations.
+accumulator: The accumulator accumulates the callback's return values. It is the accumulated 
+result of the previous iterations.
 currentValue: The current element being processed in the array.
 index: The index of the current element being processed in the array.
 array: The array reduce was called upon.
-initialValue (optional): A value to use as the first argument to the first call of the callback. If no initial value is provided, the first element of the array is used as the initial accumulator value.
+initialValue (optional): A value to use as the first argument to the first call of the callback.
+ If no initial value is provided, the first element of the array is used as the initial accumulator 
+ value.
  */
 
 // returning functions 
@@ -87,7 +90,9 @@ Output:
 */
 
 // flatten an array 
-const nestedArrays = [[1, 2], [3, 4], [5, 6]];
+const nestedArrays = [[1, 2],
+                      [3, 4],
+                      [5, 6]];
 
 const flattenedArray = nestedArrays.reduce(function (accumulator, currentArray) {
   return accumulator.concat(currentArray);

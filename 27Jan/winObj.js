@@ -3,6 +3,7 @@
 // code is running. It serves as the top-level object that provides access to various properties and 
 // methods related to the browser or the runtime environment.
 
+// BOM --> Browser object manipulation
 
 // some examples of window object
 

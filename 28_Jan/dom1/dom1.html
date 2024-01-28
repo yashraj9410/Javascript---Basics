@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulating Content Example</title>
+</head>
+<body>
+
+    <div id="myDiv">
+        <h1 id="myHeading">Original Heading</h1>
+    </div>
+
+    <script>
+       
+            // Get the div and h1 elements by their IDs
+            var divElement = document.getElementById('myDiv');
+            var headingElement = document.getElementById('myHeading');
+
+            // Modify the text content of the h1 element
+            headingElement.textContent = 'Updated Heading';
+
+            // Append additional text to the div element
+            divElement.textContent += ' - Additional content added.';
+        
+    </script>
+
+</body>
+</html>
