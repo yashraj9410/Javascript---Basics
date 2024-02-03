@@ -1,0 +1,29 @@
+Event Listeners:
+click Event:
+
+Triggered when an element is clicked.
+Example: element.addEventListener('click', function() { /* your code here */ });
+
+change Event:
+
+Fired when the value of an <input>, <select>, or <textarea> element changes.
+Example: element.addEventListener('change', function() { /* your code here */ });
+
+input Event:
+
+Triggered when the value of an <input> or <textarea> element changes (every keystroke).
+Example: element.addEventListener('input', function() { /* your code here */ });
+
+mouseover and mouseout Events:
+
+Fired when the mouse pointer enters or leaves an element.
+Examples:
+element.addEventListener('mouseover', function() { /* your code here */ });
+element.addEventListener('mouseout', function() { /* your code here */ });
+keydown, keyup, and keypress Events:
+
+Capture keyboard-related events.
+Examples:
+element.addEventListener('keydown', function() { /* your code here */ });
+element.addEventListener('keyup', function() { /* your code here */ });
+element.addEventListener('keypress', function() { /* your code here */ });

@@ -1,0 +1,58 @@
+getElementById(id):
+
+Description: Retrieves an element from the document with the specified ID.
+Usage: const element = document.getElementById(id);
+Example: const dropdown = document.getElementById('fromSelect');
+
+createElement(tagName):
+Description: Creates a new HTML element with the specified tag name.
+Usage: const element = document.createElement(tagName);
+Example: const noneOption = document.createElement('option');
+
+appendChild(node):
+Description: Appends a node as the last child of a specified parent node.
+Usage: parent.appendChild(node);
+Example: dropdown.appendChild(noneOption);
+
+
+textContent:
+
+Description: Gets or sets the text content of a node and its descendants.
+Usage: node.textContent = text;
+Example: noneOption.textContent = "None";
+
+
+value:
+
+Description: Gets or sets the value of an input element.
+Usage: inputElement.value = value;
+Example: noneOption.value = "";
+
+
+addEventListener(event, function):
+
+Description: Adds an event listener to an element, specifying the event type and the function to run when the event occurs.
+Usage: element.addEventListener(event, function);
+Example: dropdown.addEventListener('change', function () { /* ... */ });
+
+
+selectedIndex:
+
+Description: Gets or sets the index of the selected option in a dropdown.
+Usage: const selectedIndex = selectElement.selectedIndex;
+Example: const selectedOption = dropdown.options[dropdown.selectedIndex];
+
+
+style:
+
+Description: Gets or sets inline CSS styles for an element.
+Usage: element.style.property = value;
+Example: dropdown.style.backgroundColor = '#f0f8ff';
+
+
+textContent:
+
+Description: Gets or sets the text content of a node and its descendants.
+Usage: node.textContent = text;
+Example: selectedValuesParagraph.textContent = Selected values: From - ${fromValue}, To - ${toValue};
+These are common properties and methods of the document object and DOM elements that are frequently used when manipulating the HTML content dynamically using JavaScript.

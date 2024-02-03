@@ -1,0 +1,39 @@
+style.backgroundColor:
+
+Sets or gets the background color of an element.
+Example: element.style.backgroundColor = '#f0f8ff';
+
+style.color:
+
+Sets or gets the text color of an element.
+Example: element.style.color = 'red';
+
+style.fontSize:
+
+Sets or gets the font size of an element.
+Example: element.style.fontSize = '16px';
+
+style.fontFamily:
+
+Sets or gets the font family of an element.
+Example: element.style.fontFamily = 'Arial, sans-serif';
+
+style.display:
+
+Sets or gets the display property of an element.
+Example: element.style.display = 'none';
+
+style.border:
+
+Sets or gets the border properties of an element.
+Example: element.style.border = '1px solid black';
+
+style.margin and style.padding:
+
+Sets or gets the margin and padding properties of an element.
+Example: element.style.margin = '10px';
+
+style.width and style.height:
+
+Sets or gets the width and height of an element.
+Example: element.style.width = '200px';
