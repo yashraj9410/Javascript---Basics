@@ -1,0 +1,17 @@
+The use of async/await in JavaScript is primarily driven by the need to handle asynchronous operations in a more readable and synchronous-like manner.
+ JavaScript is single-threaded and non-blocking, which means that it can efficiently handle asynchronous tasks without blocking the execution of other code. 
+ Here are some key reasons for using async/await:
+
+Readability:
+
+Asynchronous code written using callbacks or promises can become difficult to read and maintain, especially as the complexity of the code increases. 
+async/await provides a more readable and structured syntax, making it easier to understand the flow of asynchronous code.
+Synchronous-Like Syntax:
+
+async/await allows developers to write asynchronous code in a style that resembles synchronous code. This can make it easier for developers
+ who are more accustomed to synchronous programming paradigms.
+
+Error Handling:
+
+Handling errors in asynchronous code can be challenging with traditional approaches. async/await simplifies error handling by using traditional
+ try-catch blocks, making it more straightforward and consistent with synchronous error handling.
