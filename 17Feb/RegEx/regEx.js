@@ -1,11 +1,12 @@
 // Define regular expressions
-const regexLowerCase = /[a-z]/;
-const regexUpperCase = /[A-Z]/;
-const regexDigit = /\d/;
-const regexSpecialChar = /[@$!%*?&]/;
+const regexLowerCase = /[a-z]/;   // contains a lower case letter 
+const regexUpperCase = /[A-Z]/;   // contains a upper case letter 
+const regexDigit = /\d/;          // contains a digit 
+const regexSpecialChar = /[@$!%*?&]/;  // contains a special characters 
 
 // Function to validate password
 function validatePassword(password) {
+    // chaining the tests 
     const isValidPassword = regexLowerCase.test(password) &&
                             regexUpperCase.test(password) &&
                             regexDigit.test(password) &&
@@ -15,7 +16,7 @@ function validatePassword(password) {
 }
 
 // Test passwords
-const passwords = ["MyP@ssw0rd", "myp@ssWORD123", "StrongPa$$w0rd"];
+const passwords = ["MyP@ssword", "myp@ssWORD123", "StrongPa$$w0rd"];
 
 passwords.forEach(password => {
     if (validatePassword(password)) {
