@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Booking System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<form id="bookingForm">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+    
+    <label for="people">Number of People:</label>
+    <input type="number" id="people" name="people" min="1" required>
+
+    <label for="timeSlot">Select Time Slot:</label>
+    <select id="timeSlot" name="timeSlot" required>
+        <option value="" disabled selected>-- Select Time Slot --</option>
+        <option value="11AM">11AM</option>
+        <option value="12PM">12PM</option>
+        <option value="1PM">1PM</option>
+        <option value="2PM">2PM</option>
+    </select>
+
+    <label for="tableNo">Select Table No:</label>
+    <select id="tableNo" name="tableNo" required>
+        <option value="" disabled selected>-- Select Table No --</option>
+        <option value="1">Table 1</option>
+        <option value="2">Table 2</option>
+        <option value="3">Table 3</option>
+        <option value="4">Table 4</option>
+        <option value="5">Table 5</option>
+    </select>
+
+    <button type="submit">Book Table</button>
+</form>
+
+<form id="cancelBookingForm">
+    <label for="cancelBookingId">Enter Booking ID to Cancel:</label>
+    <input type="text" id="cancelBookingId" name="cancelBookingId" required>
+    <button type="submit">Cancel Booking</button>
+</form>
+
+<section id="currentBookings">
+    <h2>Current Bookings</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Table Number</th>
+                <th>Time Slot</th>
+            </tr>
+        </thead>
+        <tbody id="bookingTableBody">
+            <!-- Bookings will be dynamically added here -->
+        </tbody>
+    </table>
+</section>
+
+<script src="index.js"></script>
+</body>
+</html>

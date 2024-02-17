@@ -1,0 +1,46 @@
+
+
+1. `DOMContentLoaded` Event Listener:
+   - This event is fired when the initial HTML document has been completely loaded and parsed, without waiting for stylesheets, images, and subframes to finish loading.
+   - It ensures that the JavaScript code inside the event listener will only execute after the DOM is fully loaded.
+
+2. `form`, `timeSlotSelect`, and `tableNoSelect`:
+   - These variables store references to the booking form, time slot select element, and table number select element, respectively.
+   - They are used to handle form submission and update table availability based on the selected time slot.
+
+3. `bookings`:
+   - This variable stores the existing bookings retrieved from local storage, or an empty object if there are no bookings yet.
+
+4. `timeSlotSelect` Change Event Listener:
+   - This event listener triggers whenever the selected time slot changes.
+   - It calls the `updateTableAvailability` function to update the table availability based on the selected time slot.
+
+5. `form` Submit Event Listener:
+   - This event listener triggers when the booking form is submitted.
+   - It collects form data, generates a booking ID, stores booking details in local storage, and displays a confirmation alert.
+
+6. `generateBookingId` Function:
+   - This function generates a random alphanumeric string to serve as a unique booking ID.
+
+7. `storeBookingDetails` Function:
+   - This function stores booking details in local storage under the 'bookings' key.
+
+8. `updateTableAvailability` Function:
+   - This function updates the table availability dropdown based on the selected time slot.
+   - It disables already booked tables for the selected time slot.
+
+9. `getBookedTables` Function:
+   - This function retrieves a list of tables that are already booked for a given time slot.
+
+10. `cancelBookingForm` and `cancelBooking`:
+   - These variables and functions handle the cancellation of bookings.
+   - They listen for the submission of the cancel booking form, delete the corresponding booking from local storage, and display a confirmation alert.
+
+11. `populateCurrentBookingsTable` Function:
+   - This function populates the table displaying current bookings.
+   - It retrieves existing bookings from local storage and dynamically generates table rows to display the table number and time slot for each booking.
+
+12. `populateCurrentBookingsTable` Invocation:
+   - This line invokes the `populateCurrentBookingsTable` function to initially populate the current bookings table when the page loads.
+
+Overall, this code manages the booking form, updates table availability, handles booking submission and cancellation, and displays current bookings in a table. It utilizes event listeners, functions, and local storage to provide a functional booking system.
