@@ -1,0 +1,17 @@
+\S+: This part matches one or more non-whitespace characters. \S is a shorthand character class that represents any non-whitespace character. The + quantifier specifies that the preceding \S should match one or more times, ensuring that there is at least one non-whitespace character before the @ symbol.
+
+@: This part simply matches the @ symbol literally.
+
+\S+: Similar to the first part, this matches one or more non-whitespace characters after the @ symbol. This ensures that there is at least one non-whitespace character after the @ symbol.
+
+\.: This part matches a period (.) character literally. The backslash (\) before the period is an escape character to treat the period as a literal character. In regular expressions, a period without an escape character matches any single character except for a newline. Here, we're specifically matching the period character.
+
+\S+: This matches one or more non-whitespace characters after the period (.), ensuring that there is at least one non-whitespace character after the period.
+
+So, altogether, the regular expression \S+@\S+\.\S+ matches strings that have the following pattern:
+
+One or more non-whitespace characters (\S+)
+Followed by an @ symbol
+Followed by one or more non-whitespace characters (\S+)
+Followed by a period (.)
+Followed by one or more non-whitespace characters (\S+)
