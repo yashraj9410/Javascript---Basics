@@ -1,0 +1,96 @@
+Introduction to Time Complexity:
+Definition of time complexity.
+Importance of analyzing algorithm efficiency.
+Why we use asymptotic notations.
+
+
+Asymptotic Notations:
+
+
+Most Common Imp
+Big O Notation (O-notation):
+Represents the upper bound on running time.
+Describes the worst-case scenario.
+Examples: O(1), O(n), O(n^2).
+1
+
+// Not much commonly used 
+Omega Notation (Ω-notation):
+Represents the lower bound on running time.
+Describes the best-case scenario.
+Examples: Ω(1), Ω(n), Ω(n^2).
+
+// 
+Theta Notation (Θ-notation):
+Encloses the function from above and below.
+Used for analyzing average-case complexity.
+Examples: Θ(1), Θ(n), Θ(n^2).
+2
+
+
+// what are data structures and what difference do they make 
+// primitive data types -->  c++ , java --> PDT(primitive data type )
+// int , char , float .. these are called primitive data type
+// js we use let , const , var (primitive data types )
+
+// Non primitive data types 
+// objects (very useful)
+
+// ex Array (non primitive data type )
+// array is not poredefined , we create array according to out specified data types .
+
+
+                        Data Types
+                
+                Primitive           Non-Primitive
+
+
+
+            int , char                  objects , array 
+            string , number ,
+            boolean ..
+
+
+// Data Structure --> used to hold the info in efficient manner 
+
+the above non primitive + primitive data types 
+
+Division of data structur --> 
+
+(contigous memory locations) 1004, 1008,1012,1016  -->   arr[index]
+ Linear Data Structure --> array  i.e stores in a linear format , stack , queues 
+
+
+(memory location is not contagious )
+ Non Linear Data Structure  --> trees , graphs 
+
+
+ Why DS's are useful?
+
+ --> Data is stored in such a way that optimization is easy .
+ --> Easy to perform operations (CRUD)
+
+
+Optimise the below --> 
+ --> C -> Create 
+ --> R -> Read 
+ --> U -> Update 
+ --> D -> Delete 
+
+ 
+
+ instead of taking the machine data for time complexity , we measure the complexity on the basis of 
+ number of iterations we are making in out code 
+
+ eg. 
+
+ for(let i =0;i<6;i++){   // 7 times (number of iterations)
+    // do some work 
+ }
+
+ let n ; 
+ // ask the user to provide the value of n 
+
+ for( let i =0;i<n;i++){  // number of iterations are n  --> n times O(n)
+    // do some work
+ }

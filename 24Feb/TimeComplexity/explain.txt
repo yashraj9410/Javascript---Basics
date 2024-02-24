@@ -1,0 +1,32 @@
+
+
+**Time Complexity:**
+Time complexity is a concept used to measure the amount of time an algorithm takes to run as a function of the length of its input. It helps us understand how the algorithm's performance scales with the size of the input data.
+
+**Big O Notation:**
+Big O notation is a mathematical notation used to describe the upper bound or worst-case scenario of an algorithm's time complexity in terms of how it grows relative to the size of the input. It provides a simplified way to express how the runtime of an algorithm grows as the input size increases.
+
+**Types of Time Complexities:**
+
+1. **O(1) - Constant Time Complexity:**
+   - This means that the algorithm's runtime does not depend on the size of the input. It executes in constant time, regardless of the input size. Examples include accessing a specific element in an array or performing a simple arithmetic operation.
+
+2. **O(n) - Linear Time Complexity:**
+   - This means that the runtime of the algorithm is directly proportional to the size of the input. As the input size increases, the runtime increases linearly. Examples include iterating through an array or list once.
+
+3. **O(n^2) - Quadratic Time Complexity:**
+   - This means that the runtime of the algorithm is proportional to the square of the size of the input. As the input size increases, the runtime increases quadratically. Examples include nested loops iterating over the same array.
+
+4. **O(log n) - Logarithmic Time Complexity:**
+   - This means that the runtime of the algorithm grows logarithmically as the size of the input increases. Algorithms with logarithmic time complexity are generally more efficient than linear or quadratic ones. Examples include binary search on a sorted array.
+
+5. **O(n log n) - Linearithmic Time Complexity:**
+   - This is common in efficient sorting algorithms like Merge Sort and Quick Sort. It's a combination of linear and logarithmic time complexities. As the size of the input increases, the runtime grows almost linearly but with a logarithmic factor.
+
+6. **O(2^n) - Exponential Time Complexity:**
+   - This means that the runtime of the algorithm doubles with each addition to the input data set. As the input size increases, the runtime grows exponentially. Examples include generating all subsets of a set or solving the Tower of Hanoi problem recursively.
+
+Understanding these complexities helps programmers choose the most efficient algorithms for solving a particular problem and optimize their code for better performance.
+
+
+Certainly there are different types of notations but we need to focus on Big O as it will be of immense use throughout the problem solving journey.
