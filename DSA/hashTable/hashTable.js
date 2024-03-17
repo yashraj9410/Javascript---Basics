@@ -83,4 +83,4 @@ table.set("name","yash");
 table.display();
 console.log(table.get("name"));
 table.remove("name");
-table.display();
+table.display()
