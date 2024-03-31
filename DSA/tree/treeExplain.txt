@@ -1,0 +1,24 @@
+Binary Tree:
+A binary tree is a special type of tree in which each node can have at most two children, referred to as the left child and the right child.
+
+Properties:
+Each node has at most two children.
+The left child is smaller than its parent, and the right child is greater than its parent (for binary search trees).
+Not all levels may be fully filled, but nodes are filled from left to right.
+Types of Binary Trees:
+Binary Search Tree (BST): In a BST, the left child is less than the parent, and the right child is greater than the parent. This facilitates efficient searching and sorting operations.
+
+Complete Binary Tree: A binary tree in which every level, except possibly the last, is completely filled, and all nodes are as left as possible.
+
+Full Binary Tree: A binary tree in which every node has either 0 or 2 children.
+
+Traversal Techniques:
+Traversal refers to visiting all the nodes of a tree in a specific order. There are three main traversal techniques for binary trees:
+
+Preorder Traversal: Visit the root node first, then recursively visit the left subtree, and finally recursively visit the right subtree.
+
+Inorder Traversal: Recursively visit the left subtree, then visit the root node, and finally recursively visit the right subtree. In a BST, this yields nodes in sorted order.
+
+Postorder Traversal: Recursively visit the left subtree, then recursively visit the right subtree, and finally visit the root node.
+
+Now, let's proceed with implementing a binary tree and these traversal techniques in JavaScript.
