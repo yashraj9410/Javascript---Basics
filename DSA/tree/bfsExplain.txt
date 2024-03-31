@@ -1,0 +1,9 @@
+BFS -> Breadth First Search 
+
+1 -> create a queue 
+2 -> enqueue the root node
+3-> as long as a node exists int the queue
+            a) Dequeue the node from the front
+            b) Read the node value
+            c) Enqueue the node's left child if it exists.
+            d) Enqueu the right child if present . 
